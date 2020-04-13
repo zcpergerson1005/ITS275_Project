@@ -1,4 +1,4 @@
-package finalexam;
+package FINAL;
 import java.util.Scanner;
 
 public class Customer1 extends Customers{
