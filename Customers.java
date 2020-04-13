@@ -1,4 +1,4 @@
-package finalexam;
+package FINAL;
 import java.util.Scanner;
 
 public abstract class Customers extends Blink {	 
