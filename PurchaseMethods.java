@@ -194,11 +194,31 @@ public class PurchaseMethods {
 			
 			
 	
-		//System.out.println("How many would you like?");
-			//int quantity = input.nextInt();
+		/*System.out.println(" How many would you like?");
+		int quantity = input.nextInt();
+		System.out.print("Are you sure you want to buy " + quantity + "?");
 		
-		//System.out.print("Are you sure you want to buy" + quantity );
-
+		Scanner reInput = new Scanner(System.in); 		//scanner created to use in exception
+		boolean reInputCheck = true;
+		
+		do {															//exception; asks for confirmation of quantity
+			try {	String confirmation = input.next("yes");			 
+					System.out.println("\nYou have selected yes.");
+					reInputCheck = false;								//Improvement - allow user to repeat after catch
+		    }					
+			catch (InputMismatchException wrongString) {
+				System.out.println("\nYou have selected something other than 'yes'. Please either input 'yes' or restart the program.");
+				reInput.nextLine();
+			}
+		}
+		while(reInputCheck); 
+		
+		Date purchase1 = getPurchaseDate();
+		System.out.println("You have purchased "+quantity+ " of the item "+x[item - 1][0]+ " on "+purchase1);
 	}
 
+	public static Date getPurchaseDate() { 			//gets the purchase date and time (time taken from system time when program runs) 
+		Date purchase1 = new Date();
+		return purchase1; */
+	}
 }
