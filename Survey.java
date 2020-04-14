@@ -6,6 +6,7 @@ import javafx.scene.layout.*;
 import javafx.geometry.Insets;
 import javafx.stage.Stage; 
 
+//Class Written by Zoe
 public class Survey extends Application { 
 	Label labelGroup1;
     Button btn1;
