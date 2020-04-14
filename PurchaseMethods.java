@@ -1,9 +1,11 @@
 package FINAL;
 import java.util.Scanner;
-
-
+/* FINAL PROJECT
+ * Welcome to our Website!
+ * class written by Charity Kyler
+ */
 public class PurchaseMethods {
-	static String [] [] Baby = {
+	static final String [] [] Baby = {			// Organizes the items within the menu, in a 2D String array
 			{"1.Diapers","  $" +6.89},
 			{"2.Bibs","     $" +2.39},
 			{"3.Bottles","  $" +4.99},
@@ -11,7 +13,7 @@ public class PurchaseMethods {
 			{"5.Formula","  $" +14.79}
 	};
 	
-	static String [] [] Produce = {
+	static final String [] [] Produce = {
 			{"1.Apples","  $" +.79},
 			{"2.Oranges"," $" +.85},
 			{"3.Banana","  $" +.69},
@@ -19,15 +21,15 @@ public class PurchaseMethods {
 			{"5.Mangos","  $" +1.19}
 	};
 	
-	static String [] [] Meat = {
+	static final String [] [] Meat = {
 			{"1.Chicken"," $"+9.99},
-			{"2.Beef","    $"+8.70},
+			{"2.Beef","    $"+8.71},
 			{"3.Steak","   $"+12.99},
 			{"4.Pork","    $"+10.81},
 			{"5.Shrimp","  $"+13.54}
 	};
 	
-	static String [] [] PetCare = {
+	static final String [] [] PetCare = {
 			{"1.Collar","     $"+4.99},
 			{"2.Cat Brush","  $"+8.61},
 			{"3.Dog Leash","  $"+10.99},
@@ -35,7 +37,7 @@ public class PurchaseMethods {
 			{"5.Cat Litter"," $"+15.99}
 	};
 	
-	static String [] [] Breakfast = {
+	static final String [] [] Breakfast = {
 			{"1.Cereal","        $"+5.60},
 			{"2.Oatmeal","       $"+4.39},
 			{"3.Breakfast Bar"," $"+3.49},
@@ -43,7 +45,7 @@ public class PurchaseMethods {
 			{"5.Pop Tarts","     $"+4.29}
 	};
 	
-	static String [] [] Health = {
+	static final String [] [] Health = {
 			{"1.Face Mask","  $"+1.67},
 			{"2.Brush","      $"+4.90},
 			{"3.Toothbrush"," $"+3.93},
@@ -51,7 +53,7 @@ public class PurchaseMethods {
 			{"5.Chapstick","  $"+1.43}
 	};
 	
-	static String [] [] CleaningSupplies = {
+	static final String [] [] CleaningSupplies = {
 			{"1.Broom","        $"+7.39},
 			{"2.Mop","          $"+8.49},
 			{"3.Trash Bags", "  $"+7.65},
@@ -59,7 +61,7 @@ public class PurchaseMethods {
 			{"5.Paper Towels"," $"+7.21}
 	};
 	
-	static String [] [] Beverages = {
+	static final String [] [] Beverages = {
 			{"1.Water","        $"+3.49},
 			{"2.Orange Juice"," $"+3.74},
 			{"3.Tea","          $"+3.63},
@@ -67,7 +69,7 @@ public class PurchaseMethods {
 			{"5.Grape Soda","   $"+3.90}
 	};
 
-	static String [] [] CannedGoods = {
+	static final String [] [] CannedGoods = {
 			{"1.Beans","        $"+2.99},
 			{"2.Chicken Soup"," $"+2.59},
 			{"3.Tomato Soup","  $"+2.79},
@@ -77,8 +79,8 @@ public class PurchaseMethods {
 	
 
 	public static void list(int selection, String [] [] Baby, String [] [] Produce, String [] [] Meat, String [] [] PetCare, String [] [] Breakfast,
-			String [] [] Health, String [] [] CleaningSupplies, String [] [] Beverages, String [] [] CannedGoods){
-		switch (selection) {
+			String [] [] Health, String [] [] CleaningSupplies, String [] [] Beverages, String [] [] CannedGoods){	
+		switch (selection) {									// Prints the items within the Menu in a structured format
 		case 1: 
 			for (int i = 0; i < Baby.length; i++) { 
 				for (int j = 0; j < 2; j++) {
@@ -155,7 +157,7 @@ public class PurchaseMethods {
 		}
 	}
 	
-	public static String getGroceries(int value) {
+	public static String getGroceries(int value) {										//Prints a message to ask for confirmation of order
 		String[][] x = null;
 		Scanner input = new Scanner(System.in);
 		System.out.println("\nPlease enter the numerical value of your choice:");
@@ -206,5 +208,26 @@ public class PurchaseMethods {
 			
 	
 	}
+	
+	
+			abstract class Data extends Blink{										// abstract class for data filled
+				private String name;
+				private String date;
+				private String item;
+				private int value;
+				private int quantity;
+				
+				protected Data() {
+					this("Bob", "14/04/2020", "Diapers", 3.99, 2);
+				}
+
+				public Data(Object string, Object string2, Object string3, double d, int i) {
+				}
+				
+
+				
+		
+			}
+
 
 }
