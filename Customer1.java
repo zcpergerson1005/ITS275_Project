@@ -1,6 +1,7 @@
 package FINAL;
 import java.util.Scanner;
 
+//Class Written by Zoe
 public class Customer1 extends Customers{
 	public Customer1(String customerName, String customerAddress, String customerZip, String customerState) {		//call upon the constructor of the superclass, Customer
 		super(customerName, customerAddress, customerZip, customerState); }		
