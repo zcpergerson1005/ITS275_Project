@@ -1,6 +1,7 @@
 package FINAL;
 import java.util.Scanner;
 
+//Class Written by Zoe
 public abstract class Customers extends Blink {	 
 	protected Customers(String customerName, String customerAddress, String customerZip, String customerState){ 		//protected so can still be used by subclasses
 		this.customerName = customerName;
